@@ -8,9 +8,9 @@ node_modules/
 .env.*.local
 
 # Build outputs
-dist/
+# dist/  # Commented out - GitHub Actions builds and deploys this
 build/
-*/dist/
+# */dist/  # Commented out - needed for workflow
 */build/
 
 # Logs
