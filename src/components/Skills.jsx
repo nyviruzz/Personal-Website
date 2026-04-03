@@ -4,22 +4,22 @@ import './Skills.css'
 const Skills = () => {
   const systems = [
     {
-      id: 'SYS-01',
+      id: 'Category 01',
       title: 'Machine Learning',
       skills: ['Scikit-learn', 'TensorFlow', 'PyTorch', 'XGBoost', 'LightGBM', 'Keras'],
     },
     {
-      id: 'SYS-02',
+      id: 'Category 02',
       title: 'Data Analysis',
       skills: ['Python', 'Pandas', 'NumPy', 'SQL', 'R', 'Jupyter'],
     },
     {
-      id: 'SYS-03',
+      id: 'Category 03',
       title: 'Visualization',
       skills: ['Matplotlib', 'Seaborn', 'Plotly', 'Tableau', 'Power BI'],
     },
     {
-      id: 'SYS-04',
+      id: 'Category 04',
       title: 'Infrastructure',
       skills: ['Apache Spark', 'AWS', 'Docker', 'Git', 'Azure', 'Linux'],
     },
@@ -36,7 +36,7 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
         >
           <span className="section-label">// 03 SKILLS</span>
-          <h2 className="section-title">Systems Overview</h2>
+          <h2 className="section-title">Skills</h2>
         </motion.div>
 
         <div className="sys-grid">
@@ -52,7 +52,6 @@ const Skills = () => {
               <div className="sys-head">
                 <span className="sys-id">{sys.id}</span>
                 <span className="sys-title">{sys.title}</span>
-                <span className="sys-status">ONLINE</span>
               </div>
               <div className="sys-body">
                 {sys.skills.map((skill, i) => (

@@ -4,29 +4,29 @@ import './Projects.css'
 const Projects = () => {
   const projects = [
     {
-      id: 'MIS-001',
+      id: 'Project 01',
       title: 'Machine Learning Pipeline',
       description: 'Predictive analytics pipeline using ensemble methods and explainability tools for actionable data insights.',
       tags: ['Python', 'XGBoost', 'SHAP', 'Scikit-learn'],
-      status: 'DEPLOYED',
+      status: 'Case Study',
       github: '#',
       demo: '#',
     },
     {
-      id: 'MIS-002',
+      id: 'Project 02',
       title: 'Statistical Data Analysis',
       description: 'Deep dive into complex datasets using statistical methods, hypothesis testing, and advanced visualization.',
       tags: ['Python', 'Pandas', 'Matplotlib', 'Seaborn'],
-      status: 'ACTIVE',
+      status: 'Case Study',
       github: '#',
       demo: '#',
     },
     {
-      id: 'MIS-003',
+      id: 'Project 03',
       title: 'Neural Network Classifier',
       description: 'Deep learning models for pattern recognition and multi-class classification using modern architectures.',
       tags: ['TensorFlow', 'Keras', 'PyTorch', 'NLP'],
-      status: 'ACTIVE',
+      status: 'Case Study',
       github: '#',
       demo: '#',
     },
@@ -43,7 +43,7 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
         >
           <span className="section-label">// 02 PROJECTS</span>
-          <h2 className="section-title">Mission Files</h2>
+          <h2 className="section-title">Selected Projects</h2>
         </motion.div>
 
         <div className="projects-grid">
@@ -59,9 +59,7 @@ const Projects = () => {
             >
               <div className="proj-head">
                 <span className="proj-id">{project.id}</span>
-                <span className={`proj-status ${project.status === 'DEPLOYED' ? 'deployed' : 'active'}`}>
-                  {project.status}
-                </span>
+                <span className="proj-status">{project.status}</span>
               </div>
               <h3 className="proj-title">{project.title}</h3>
               <p className="proj-desc">{project.description}</p>

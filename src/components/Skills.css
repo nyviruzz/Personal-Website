@@ -7,7 +7,7 @@
 .sys-panel {
   background: var(--bg-3);
   border: 1px solid var(--border-1);
-  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -23,8 +23,8 @@
 .sys-id {
   font-family: var(--font-mono);
   font-size: 0.62rem;
-  letter-spacing: 0.2em;
-  color: var(--accent);
+  letter-spacing: 0.08em;
+  color: var(--text-3);
 }
 
 .sys-title {
@@ -33,15 +33,6 @@
   color: var(--text-2);
   flex: 1;
   letter-spacing: 0.05em;
-}
-
-.sys-status {
-  font-family: var(--font-mono);
-  font-size: 0.58rem;
-  letter-spacing: 0.15em;
-  color: var(--accent-l);
-  border: 1px solid var(--accent-d);
-  padding: 0.1rem 0.4rem;
 }
 
 .sys-body {

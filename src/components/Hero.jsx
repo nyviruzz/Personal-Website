@@ -7,12 +7,6 @@ const Hero = () => {
 
   return (
     <section id="home" className="hero">
-      <div className="hud-corner hud-tl" />
-      <div className="hud-corner hud-tr" />
-      <div className="hud-corner hud-bl" />
-      <div className="hud-corner hud-br" />
-      <div className="scan-line" />
-
       <div className="container hero-inner">
         <div className="hero-text">
           <motion.div
@@ -22,7 +16,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="status-dot" />
-            <span className="meta-tag">STONY BROOK UNIVERSITY // APPLIED MATHEMATICS & STATISTICS</span>
+            <span className="meta-tag">STONY BROOK UNIVERSITY · APPLIED MATHEMATICS & STATISTICS</span>
           </motion.div>
 
           <motion.h1
@@ -40,21 +34,32 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            Transforming data into actionable insights through machine learning,
-            statistical modeling, and advanced analytics.
+            I build practical machine learning and analytics projects with a
+            focus on clear business impact, reliable modeling, and clean communication.
           </motion.p>
+
+          <motion.ul
+            className="hero-points"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.38 }}
+          >
+            <li>Interested in ML / data science internships and new grad roles</li>
+            <li>Coursework in statistics, optimization, and data mining</li>
+            <li>Based in New York and open to relocation</li>
+          </motion.ul>
 
           <motion.div
             className="hero-cta"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.45 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
           >
             <button className="btn btn-primary" onClick={() => scrollTo('projects')}>
               View Projects
             </button>
             <button className="btn btn-secondary" onClick={() => scrollTo('contact')}>
-              Contact
+              Get In Touch
             </button>
           </motion.div>
         </div>
@@ -65,25 +70,20 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <div className="radar">
-            <div className="radar-ring r1" />
-            <div className="radar-ring r2" />
-            <div className="radar-ring r3" />
-            <div className="radar-sweep" />
-            <div className="radar-center" />
-            <div className="radar-dot" style={{ top: '28%', left: '62%', animationDelay: '0s' }} />
-            <div className="radar-dot" style={{ top: '58%', left: '30%', animationDelay: '1.4s' }} />
-            <div className="radar-dot" style={{ top: '72%', left: '65%', animationDelay: '2.8s' }} />
+          <div className="hero-card">
+            <p className="card-label">Current Focus</p>
+            <h3>Machine Learning</h3>
+            <p>Predictive modeling, feature engineering, and model explainability.</p>
+            <p className="card-label">Toolbox</p>
+            <div className="hero-tags">
+              <span>Python</span>
+              <span>Scikit-learn</span>
+              <span>Pandas</span>
+              <span>TensorFlow</span>
+              <span>SQL</span>
+            </div>
           </div>
-          <div className="radar-tag">SYSTEM ACTIVE</div>
         </motion.div>
-      </div>
-
-      <div className="hero-statusbar">
-        <span>LAT 40.9176° N</span>
-        <span>LON 73.1232° W</span>
-        <span>ALT 0 FT MSL</span>
-        <span className="status-on">STATUS: ONLINE</span>
       </div>
     </section>
   )

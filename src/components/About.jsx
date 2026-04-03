@@ -22,7 +22,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
         >
           <span className="section-label">// 01 ABOUT</span>
-          <h2 className="section-title">Mission Brief</h2>
+          <h2 className="section-title">About</h2>
         </motion.div>
 
         <div className="about-grid">
@@ -35,7 +35,7 @@ const About = () => {
           >
             <p className="bio-lead">
               Applied Mathematics & Statistics student at Stony Brook University
-              with a passion for Machine Learning, Data Science, and Information Security.
+              with a focus on machine learning, data science, and information security.
             </p>
             <p className="bio-text">
               Completed coursework spanning calculus, linear algebra, probability,
@@ -43,8 +43,8 @@ const About = () => {
               deep learning, NLP, and computer vision.
             </p>
             <p className="bio-text">
-              Committed to leveraging data science to solve real-world problems and
-              create meaningful impact across industries.
+              I care about shipping useful solutions, writing readable code,
+              and communicating results clearly to technical and non-technical teams.
             </p>
             <div className="bio-stats">
               <div className="stat">

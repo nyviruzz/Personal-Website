@@ -43,8 +43,8 @@ body::before {
   background-image:
     linear-gradient(var(--border-1) 1px, transparent 1px),
     linear-gradient(90deg, var(--border-1) 1px, transparent 1px);
-  background-size: 80px 80px;
-  opacity: 0.35;
+  background-size: 96px 96px;
+  opacity: 0.16;
   pointer-events: none;
   z-index: 0;
 }
@@ -95,7 +95,7 @@ body::before {
   cursor: pointer;
   transition: all 0.2s ease;
   text-decoration: none;
-  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+  border-radius: 8px;
 }
 
 .btn-primary {

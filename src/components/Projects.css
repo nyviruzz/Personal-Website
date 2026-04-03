@@ -7,7 +7,7 @@
 .proj-card {
   background: var(--bg-3);
   border: 1px solid var(--border-1);
-  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+  border-radius: 10px;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -35,20 +35,12 @@
 
 .proj-status {
   font-family: var(--font-mono);
-  font-size: 0.58rem;
-  letter-spacing: 0.15em;
-  padding: 0.15rem 0.5rem;
-  border: 1px solid currentColor;
-}
-
-.proj-status.deployed {
-  color: var(--accent-l);
-  border-color: var(--accent-d);
-}
-
-.proj-status.active {
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.45rem;
+  border: 1px solid var(--border-2);
   color: var(--text-2);
-  border-color: var(--border-2);
+  border-radius: 4px;
 }
 
 .proj-title {

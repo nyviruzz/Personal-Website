@@ -32,7 +32,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
         >
           <span className="section-label">// 04 CONTACT</span>
-          <h2 className="section-title">Establish Link</h2>
+          <h2 className="section-title">Contact</h2>
         </motion.div>
 
         <div className="contact-grid">
@@ -84,6 +84,7 @@ const Contact = () => {
                   onChange={handleChange} required placeholder="Your message..." rows="5" />
               </div>
               <button type="submit" className="btn btn-primary">Transmit Message</button>
+              <p className="form-note">I usually respond within 24-48 hours.</p>
             </form>
           </motion.div>
         </div>
