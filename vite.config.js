@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   // Custom domain (visula.dev) serves from root, not /Personal-Website/
   base: '/',
+  publicDir: 'public',
   server: {
     port: 3000,
   },
