@@ -17,35 +17,21 @@ jobs:
         with:
           node-version: 18
 
-      - name: Debug: Node & repo info
-        run: |
-          echo "== node/npm info =="
-          node -v || true
-          npm -v || true
-          echo "== list frontend files =="
-          ls -la frontend || true
-          echo "== show package.json =="
-          cat frontend/package.json || true
-
-      - name: Install dependencies (frontend)
-        working-directory: ./frontend
+      - name: Install dependencies
         run: npm ci --prefer-offline --no-audit --progress=false
         env:
           CI: true
 
-      - name: Build (frontend)
-        working-directory: ./frontend
-        run: |
-          echo "Starting vite build"
-          npm run build --loglevel verbose
+      - name: Build
+        run: npm run build
         env:
           CI: true
 
       - name: Create .nojekyll
-        run: touch frontend/dist/.nojekyll
+        run: touch dist/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./frontend/dist
+          publish_dir: ./dist

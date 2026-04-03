@@ -1,0 +1,147 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.bio-lead {
+  font-size: 1.1rem;
+  color: var(--text-1);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.bio-text {
+  color: var(--text-2);
+  line-height: 1.75;
+  margin-bottom: 0.9rem;
+}
+
+.bio-stats {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--border-1);
+  border-bottom: 1px solid var(--border-1);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-val {
+  font-family: var(--font-mono);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent-l);
+  line-height: 1;
+}
+
+.stat-key {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--text-3);
+  text-transform: uppercase;
+}
+
+.about-panels {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.data-panel {
+  background: var(--bg-3);
+  border: 1px solid var(--border-1);
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+  padding: 1.25rem;
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border-1);
+}
+
+.panel-id {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+}
+
+.panel-badge {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--text-3);
+  border: 1px solid var(--border-2);
+  padding: 0.1rem 0.4rem;
+}
+
+.course-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.course-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-2);
+  font-family: var(--font-mono);
+}
+
+.ci {
+  color: var(--text-3);
+  font-size: 0.65rem;
+  min-width: 1.4rem;
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.info-row {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-1);
+}
+
+.info-row:last-child { border-bottom: none; }
+
+.ik {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  color: var(--text-3);
+  min-width: 7rem;
+  text-transform: uppercase;
+}
+
+.iv {
+  font-size: 0.85rem;
+  color: var(--text-1);
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

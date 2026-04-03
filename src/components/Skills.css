@@ -1,0 +1,88 @@
+.sys-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.sys-panel {
+  background: var(--bg-3);
+  border: 1px solid var(--border-1);
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+  overflow: hidden;
+}
+
+.sys-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 1.25rem;
+  background: var(--bg-4);
+  border-bottom: 1px solid var(--border-1);
+}
+
+.sys-id {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+}
+
+.sys-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-2);
+  flex: 1;
+  letter-spacing: 0.05em;
+}
+
+.sys-status {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.15em;
+  color: var(--accent-l);
+  border: 1px solid var(--accent-d);
+  padding: 0.1rem 0.4rem;
+}
+
+.sys-body {
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.skill-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skill-name {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-2);
+  min-width: 7rem;
+  letter-spacing: 0.04em;
+}
+
+.skill-track {
+  flex: 1;
+  height: 3px;
+  background: var(--border-1);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-d), var(--accent-l));
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 640px) {
+  .sys-grid {
+    grid-template-columns: 1fr;
+  }
+}
