@@ -10,16 +10,16 @@
   --bg-2:      #0c1120;
   --bg-3:      #111828;
   --bg-4:      #16202e;
-  --border-1:  #1c2c40;
-  --border-2:  #26405a;
-  --border-3:  #305472;
-  --text-1:    #c0cede;
-  --text-2:    #6d90ab;
-  --text-3:    #3a566e;
-  --accent:    #4a88ba;
-  --accent-l:  #6aaad6;
-  --accent-d:  #2d5e84;
-  --glow:      rgba(74, 136, 186, 0.12);
+  --border-1:  #272d39;
+  --border-2:  #3a4250;
+  --border-3:  #515b6c;
+  --text-1:    #d6dae0;
+  --text-2:    #a3acb9;
+  --text-3:    #767f8d;
+  --accent:    #9aa3b2;
+  --accent-l:  #c7cdd7;
+  --accent-d:  #747e8f;
+  --glow:      rgba(199, 205, 215, 0.08);
   --font-head: 'Space Grotesk', sans-serif;
   --font-mono: 'Space Mono', monospace;
 }
