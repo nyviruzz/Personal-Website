@@ -3,16 +3,14 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Personal-Website/',
+  // Custom domain (visula.dev) serves from root, not /Personal-Website/
+  base: '/',
   server: {
-    port: 3000
+    port: 3000,
   },
   build: {
     outDir: 'dist',
-    sourcemap: false
-  }
+    sourcemap: false,
+  },
 })
-
-
-
 
