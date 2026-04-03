@@ -34,7 +34,12 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: |
+          npm run build
+          JS_FILE=$(ls dist/assets/index-*.js | head -n 1)
+          CSS_FILE=$(ls dist/assets/index-*.css | head -n 1)
+          cp "$JS_FILE" dist/assets/index.js
+          cp "$CSS_FILE" dist/assets/index.css
 
       - name: Include CNAME
         run: cp CNAME dist/CNAME
